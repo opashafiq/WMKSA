@@ -1,0 +1,6 @@
+@FLS.GLS.API_HostAddress = http://localhost:5164
+
+GET {{FLS.GLS.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
