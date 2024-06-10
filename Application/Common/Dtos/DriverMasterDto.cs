@@ -8,6 +8,7 @@ namespace Application.Common.Dtos
 {
     public class DriverMasterDto
     {
+        // Commit Test
         public long Id { get; set; }
 
         public string DriverCode { get; set; } = null!;
