@@ -21,6 +21,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Application.Operations.JobOrder.Commands;
+using Application.Operations.ReceiveItemsNew.Commands;
+using Application.Operations.ReceiveItemsNewDetail.Commands;
+using Application.Operations.ReceiveItemsNewRelease.Commands;
+using Application.Operations.ReceiveItemsNewReleaseDetail.Commands;
 
 namespace Application.MappingProfile
 {
@@ -56,6 +61,17 @@ namespace Application.MappingProfile
             CreateMap<UpdateItemsRateMaster, Domain.Entities.ItemsRateMaster>();
             CreateMap<CreateItemsRateMasterDetail, Domain.Entities.ItemsRateMasterDetail>();
             CreateMap<UpdateItemsRateMasterDetail, Domain.Entities.ItemsRateMasterDetail>();
+            CreateMap<CreateJobOrder, Domain.Entities.JobOrder>();
+            CreateMap<UpdateJobOrder, Domain.Entities.JobOrder>();
+            CreateMap<CreateReceiveItemsNew, Domain.Entities.ReceiveItemsNew>();
+            CreateMap<UpdateReceiveItemsNew, Domain.Entities.ReceiveItemsNew>();
+            CreateMap<CreateReceiveItemsNewDetail, Domain.Entities.ReceiveItemsNewDetail>();
+            CreateMap<UpdateReceiveItemsNewDetail, Domain.Entities.ReceiveItemsNewDetail>();
+            CreateMap<CreateReceiveItemsNewRelease, Domain.Entities.ReceiveItemsNewRelease>();
+            CreateMap<UpdateReceiveItemsNewRelease, Domain.Entities.ReceiveItemsNewRelease>();
+            CreateMap<CreateReceiveItemsNewReleaseDetail, Domain.Entities.ReceiveItemsNewReleaseDetail>();
+            CreateMap<UpdateReceiveItemsNewReleaseDetail, Domain.Entities.ReceiveItemsNewReleaseDetail>();
+
 
             // Map Dtos
             CreateMap<Domain.Entities.DriverMaster, DriverMasterKeyValueDto>();

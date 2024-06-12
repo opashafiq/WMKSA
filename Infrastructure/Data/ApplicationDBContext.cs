@@ -27,6 +27,12 @@ namespace Infrastructure.Data
         public DbSet<ItemService> ItemService { get; set; }
         public DbSet<ItemsRateMaster> ItemsRateMaster { get; set; }
         public DbSet<ItemsRateMasterDetail> ItemsRateMasterDetail { get; set; }
+        public DbSet<JobOrder> JobOrder { get; set; }
+        public DbSet<ReceiveItemsNew> ReceiveItemsNew { get; set; }
+        public DbSet<ReceiveItemsNewDetail> ReceiveItemsNewDetails { get; set; }
+        public DbSet<ReceiveItemsNewRelease> ReceiveItemsNewRelease { get; set; }
+        public DbSet<ReceiveItemsNewReleaseDetail> ReceiveItemsNewReleaseDetails { get; set; }
+        
 
     }
 }

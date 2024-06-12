@@ -38,7 +38,11 @@ builder.Services.AddScoped<IRecItemMasterRepository, RecItemMasterRepository>();
 builder.Services.AddScoped<IItemServiceRepository, ItemServiceRepository>();
 builder.Services.AddScoped<IItemsRateMasterRepository, ItemsRateMasterRepository>();
 builder.Services.AddScoped<IItemsRateMasterDetailsRepository, ItemsRateMasterDetailsRepository>();
-
+builder.Services.AddScoped<IJobOrderRepository, JobOrderRepository>();
+builder.Services.AddScoped<IReceiveItemsNewRepository, ReceiveItemsNewRepository>();
+builder.Services.AddScoped<IReceiveItemsNewDetailRepository, ReceiveItemsNewDetailRepository>();
+builder.Services.AddScoped<IReceiveItemsNewReleaseRepository, ReceiveItemsNewReleaseRepository>();
+builder.Services.AddScoped<IReceiveItemsNewReleaseDetailRepository, ReceiveItemsNewReleaseDetailRepository>();
 
 
 object value = builder.Services.AddApplication().AddInfrastructure();
