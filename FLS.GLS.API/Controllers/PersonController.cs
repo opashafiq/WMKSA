@@ -13,36 +13,36 @@ namespace FLS.GLS.API.Controllers
     [ApiController]
     public class PersonController : ControllerBase
     {
-        private readonly ISender _sender;
+        //private readonly ISender _sender;
 
-        public PersonController(ISender sender) => _sender = sender;
+        //public PersonController(ISender sender) => _sender = sender;
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult> GetById(int id)
-        {
-            var person = await _sender.Send(new GetPersonById(id));
-            return Ok(person);
-        }
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult> GetById(int id)
+        //{
+        //    var person = await _sender.Send(new GetPersonById(id));
+        //    return Ok(person);
+        //}
 
-        [HttpPost("create")]
-        public async Task<ActionResult> Create([FromBody] CreatePerson person)
-        {
-            var _person = await _sender.Send(person);
-            return Ok(_person);
-        }
+        //[HttpPost("create")]
+        //public async Task<ActionResult> Create([FromBody] CreatePerson person)
+        //{
+        //    var _person = await _sender.Send(person);
+        //    return Ok(_person);
+        //}
 
-        [HttpPost("update")]
-        public async Task<ActionResult> Update([FromBody] UpdatePerson person)
-        {
-            var _person = await _sender.Send(person);
-            return Ok(_person);
-        }        
+        //[HttpPost("update")]
+        //public async Task<ActionResult> Update([FromBody] UpdatePerson person)
+        //{
+        //    var _person = await _sender.Send(person);
+        //    return Ok(_person);
+        //}        
         
-        [HttpPost("delete")]
-        public async Task<ActionResult> Delete([FromBody] DeletePerson person)
-        {
-            var _person = await _sender.Send(person);
-            return Ok(_person);
-        }
+        //[HttpPost("delete")]
+        //public async Task<ActionResult> Delete([FromBody] DeletePerson person)
+        //{
+        //    var _person = await _sender.Send(person);
+        //    return Ok(_person);
+        //}
     }
 }

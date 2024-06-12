@@ -12,7 +12,7 @@ using Application.Operations.TransporterMaster.Queries;
 
 namespace FLS.GLS.API.Controllers
 {
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class ItemsRateMasterController : ControllerBase

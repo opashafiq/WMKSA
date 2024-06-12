@@ -14,7 +14,7 @@ using Application.Operations.SubCustomerMaster.Commands;
 
 namespace FLS.GLS.API.Controllers
 {
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class SubCustomerMasterController : ControllerBase

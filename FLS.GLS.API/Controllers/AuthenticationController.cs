@@ -55,8 +55,15 @@ namespace FLS.GLS.API.Controllers
         
         public async Task<ActionResult> Login([FromBody] LoginCommand model)
         {
-            var login = await _sender.Send(model);
-            return Ok(login);
+            try
+            {
+                var login = await _sender.Send(model);
+                return Ok(login);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
     }
 }
