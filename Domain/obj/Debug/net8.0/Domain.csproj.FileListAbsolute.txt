@@ -22,3 +22,4 @@ D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Domain\obj\Debug\net
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Domain\obj\Debug\net8.0\refint\Domain.dll
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Domain\obj\Debug\net8.0\Domain.pdb
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Domain\obj\Debug\net8.0\Domain.sourcelink.json

@@ -313,3 +313,4 @@ D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Debu
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\bin\Debug\net8.0\AutoMapper.dll
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\bin\Debug\net8.0\Lombok.NET.dll
+D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Debug\net8.0\FLS.GLS.API.sourcelink.json

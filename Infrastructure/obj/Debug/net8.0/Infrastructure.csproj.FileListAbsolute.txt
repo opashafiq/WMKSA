@@ -32,3 +32,4 @@ D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Infrastructure\bin\D
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Infrastructure\bin\Debug\net8.0\Domain.pdb
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CopyComplete
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
