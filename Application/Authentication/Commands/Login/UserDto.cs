@@ -9,6 +9,7 @@ namespace Application.Authentication.Commands.Login
     public class UserDto
     {
         public string UserName { get; set; } = default!;
+        public string Email { get; set; } = default!;
         public string Token { get; set; } = default!;
     }
 }

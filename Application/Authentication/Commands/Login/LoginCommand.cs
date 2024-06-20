@@ -30,6 +30,7 @@ namespace Application.Authentication.Commands.Login
             var entity = new UserDto()
             {
                 UserName = UserName,
+                Email=token.Email,
                 Token=token.Token
             };
             return entity;
