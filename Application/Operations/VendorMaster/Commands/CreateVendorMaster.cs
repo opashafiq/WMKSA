@@ -45,7 +45,7 @@ namespace Application.Operations.VendorMaster.Commands
 
         public string VatNo { get; set; } = null!;
 
-        public int DelFlag { get; set; }
+        public bool DelFlag { get; set; }
 
         public long? VacId { get; set; }
 
