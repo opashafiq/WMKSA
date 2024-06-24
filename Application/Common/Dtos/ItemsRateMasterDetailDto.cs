@@ -20,7 +20,7 @@ namespace Application.Common.Dtos
 
         public decimal Charges { get; set; }
 
-        public int VatInc { get; set; }
+        public bool VatInc { get; set; }
 
         public decimal VatP { get; set; }
 

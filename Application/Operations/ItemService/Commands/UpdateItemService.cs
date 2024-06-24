@@ -15,6 +15,6 @@ namespace Application.Operations.ItemService.Commands
 
         public string? ItemsService { get; set; }
 
-        public int? IndividualUnit { get; set; }
+        public bool? IndividualUnit { get; set; }
     }
 }

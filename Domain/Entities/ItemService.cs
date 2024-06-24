@@ -9,7 +9,7 @@ public partial class ItemService
 
     public string? ItemsService { get; set; }
 
-    public int? IndividualUnit { get; set; }
+    public bool? IndividualUnit { get; set; }
 
     public virtual ICollection<ItemsRateMasterDetail> ItemsRateMasterDetails { get; set; } = new List<ItemsRateMasterDetail>();
 }
