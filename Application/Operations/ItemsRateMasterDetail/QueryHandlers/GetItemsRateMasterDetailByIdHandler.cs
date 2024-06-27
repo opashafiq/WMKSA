@@ -49,7 +49,7 @@ namespace Application.Operations.ItemsRateMasterDetails.QueryHandlers
                                  on irmd.RecItemMasterId equals rim.Id
                                  select new ItemsRateMasterDetailDto
                                  {
-                                     Id = irmd.Id,
+                                     itemsRateMasterDetailId = irmd.Id,
                                      ItemsRateMasterId = irmd.ItemsRateMasterId,
                                      ItemsRateMasterRateCode = irm.RateCode,
                                      ItemServiceId = irmd.ItemServiceId,

@@ -8,7 +8,7 @@ namespace Application.Common.Dtos
 {
     public class ItemsRateMasterDetailDto
     {
-        public long Id { get; set; }
+        public long itemsRateMasterDetailId { get; set; }
 
         public int ItemsRateMasterId { get; set; }
         public string ItemsRateMasterRateCode { get; set; }

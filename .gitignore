@@ -2,12 +2,12 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Application/obj
-/Application/bin/Debug/net8.0
-/.vs/FLS.GLS.APIMediaTR
-/.vs/ProjectEvaluation
-/.vs
-/Application/bin/Release/net8.0
+./Application/obj
+./Application/bin/Debug/net8.0
+./.vs/FLS.GLS.APIMediaTR
+./.vs/ProjectEvaluation
+./.vs
+./Application/bin/Release/net8.0
 =======
 /Domain/obj
 /Domain/bin/Debug/net8.0
