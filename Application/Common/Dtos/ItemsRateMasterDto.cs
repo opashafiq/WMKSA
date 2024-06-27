@@ -14,6 +14,8 @@ namespace Application.Common.Dtos
         public string RateCode { get; set; } = null!;
 
         public long CustomerMasterId { get; set; }
+        public string CustomerMasterCustCode { get; set; }
+        public string CustomerMasterCustName { get; set; }
 
         public decimal EntryBy { get; set; }
 

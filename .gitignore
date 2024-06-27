@@ -8,6 +8,7 @@
 ./.vs/ProjectEvaluation
 ./.vs
 ./Application/bin/Release/net8.0
+./Application/bin/Debug/net8.0/Application.dll
 =======
 /Domain/obj
 /Domain/bin/Debug/net8.0
@@ -126,3 +127,7 @@
 /FLS.GLS.API/obj/Debug/net8.0/FLS.GLS.API.pdb
 /FLS.GLS.API/obj/Debug/net8.0/FLS.GLS.API.sourcelink.json
 /.vs/FLS.GLS.APIMediaTR/DesignTimeBuild/.dtbcache.v2
+/.gitignore
+/.gitignore
+/.gitignore
+/.gitignore
