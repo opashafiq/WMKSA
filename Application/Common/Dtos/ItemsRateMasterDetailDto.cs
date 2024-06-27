@@ -16,6 +16,10 @@ namespace Application.Common.Dtos
         public int ItemServiceId { get; set; }
         public string ItemServiceItemsService { get; set; }
 
+        public long CustomerMasterId { get; set; }
+        public string CustomerMasterCustCode { get; set; }
+        public string CustomerMasterCustName { get; set; }
+
         public int FreeDays { get; set; }
 
         public decimal Charges { get; set; }

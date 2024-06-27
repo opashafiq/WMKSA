@@ -17,12 +17,14 @@ namespace Application.Operations.ItemsRateMasterDetails.QueryHandlers
         private readonly IItemsRateMasterRepository _itemsRateMasterRepository;
         private readonly IUnitMasterRepository _unitMasterRepository;
         private readonly IRecItemMasterRepository _recItemMasterRepository;
+        private readonly ICustomerMasterRepository _customerMasterRepository;
         public GetItemsRateMasterDetailByIdHandler(
             IItemsRateMasterDetailsRepository itemsRateMasterDetailsRepository,
             IItemServiceRepository itemServiceRepository,
             IItemsRateMasterRepository itemsRateMasterRepository,
             IUnitMasterRepository unitMasterRepository,
-            IRecItemMasterRepository recItemMasterRepository
+            IRecItemMasterRepository recItemMasterRepository,
+            ICustomerMasterRepository customerMasterRepository
             )
         {
             _itemsRateMasterDetailsRepository = itemsRateMasterDetailsRepository;
@@ -30,6 +32,7 @@ namespace Application.Operations.ItemsRateMasterDetails.QueryHandlers
             _unitMasterRepository = unitMasterRepository;
             _itemsRateMasterRepository = itemsRateMasterRepository;
             _recItemMasterRepository = recItemMasterRepository;
+            _customerMasterRepository = customerMasterRepository;
         }
 
         public async Task<ItemsRateMasterDetailDto> Handle(GetItemsRateMasterDetailById request, CancellationToken cancellationToken)
@@ -47,6 +50,8 @@ namespace Application.Operations.ItemsRateMasterDetails.QueryHandlers
                                  on irmd.UnitMasterId equals um.Id
                                  join rim in await _recItemMasterRepository.GetAll()
                                  on irmd.RecItemMasterId equals rim.Id
+                                 join cm in await _customerMasterRepository.GetAll()
+                                 on irm.CustomerMasterId equals cm.Id
                                  select new ItemsRateMasterDetailDto
                                  {
                                      itemsRateMasterDetailId = irmd.Id,
@@ -54,6 +59,9 @@ namespace Application.Operations.ItemsRateMasterDetails.QueryHandlers
                                      ItemsRateMasterRateCode = irm.RateCode,
                                      ItemServiceId = irmd.ItemServiceId,
                                      ItemServiceItemsService = isr.ItemsService,
+                                     CustomerMasterId = irm.CustomerMasterId,
+                                     CustomerMasterCustCode = cm.CustCode,
+                                     CustomerMasterCustName = cm.CustName,
                                      FreeDays = irmd.FreeDays,
                                      Charges = irmd.Charges,
                                      VatInc = irmd.VatInc,
