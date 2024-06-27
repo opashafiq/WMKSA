@@ -1,4 +1,5 @@
 ﻿using Application.Abstractions;
+using Application.Common.Dtos;
 using Application.Operations.ItemsRateMaster.Queries;
 using MediatR;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Operations.ItemsRateMaster.QueryHandlers
 {
-    public class GetItemsRateMasterByIdHandler : IRequestHandler<GetItemsRateMasterById, Domain.Entities.ItemsRateMaster>
+    public class GetItemsRateMasterByIdHandler : IRequestHandler<GetItemsRateMasterById, ItemsRateMasterDto>
     {
         private readonly IItemsRateMasterRepository _itemsRateMasterRepository;
 
@@ -18,9 +19,18 @@ namespace Application.Operations.ItemsRateMaster.QueryHandlers
             _itemsRateMasterRepository = itemsRateMasterRepository;
         }
 
-        public async Task<Domain.Entities.ItemsRateMaster> Handle(GetItemsRateMasterById request, CancellationToken cancellationToken)
+        public async Task<ItemsRateMasterDto> Handle(GetItemsRateMasterById request, CancellationToken cancellationToken)
         {
-            return await _itemsRateMasterRepository.GetItemsRateMasterById(request.Id);
+            var itemsRateMaster = await _itemsRateMasterRepository.GetItemsRateMasterById(request.Id);
+            ItemsRateMasterDto itemsRateMasterDto = new ItemsRateMasterDto
+                {
+                    ItemsRateMasterId = itemsRateMaster.Id,
+                    RateCode = itemsRateMaster.RateCode,
+                    CustomerMasterId = itemsRateMaster.CustomerMasterId,
+                    EntryBy = itemsRateMaster.EntryBy,
+                    EntryDate   = itemsRateMaster.EntryDate
+                };
+            return itemsRateMasterDto;
         }
     }
 }
