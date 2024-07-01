@@ -86,6 +86,7 @@ namespace Application.Operations.ReceiveItemsNew.QueryHandlers
                          UnitMasterMainUnit = um.MainUnit,
                          UnitMasterUnitCode = um.UnitCode,
                          Qty = ri.Qty,
+                         RelasedQty=ri.RelasedQty,
                          CustomerMasterId = ri.CustomerMasterId,
                          CustomerMasterCustCode = cm.CustCode,
                          CustomerMasterCustName = cm.CustName,

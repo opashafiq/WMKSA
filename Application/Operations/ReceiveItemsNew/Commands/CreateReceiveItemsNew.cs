@@ -22,6 +22,7 @@ namespace Application.Operations.ReceiveItemsNew.Commands
         public long? UnitMasterId { get; set; }
 
         public int? Qty { get; set; }
+        public int? RelasedQty { get; set; }
 
         public long? CustomerMasterId { get; set; }
 

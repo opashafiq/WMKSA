@@ -19,7 +19,7 @@ public partial class ReceiveItemsNewReleaseDto
 
     public long? JobOrderId { get; set; }
     public string JobOrderJobFIleNo { get; set; }
-    public string JobOrderJobStatus { get; set; }
+    public int? JobOrderJobStatus { get; set; }
 
     public DateTime? ReleaseDate { get; set; }
 

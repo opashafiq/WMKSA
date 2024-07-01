@@ -137,6 +137,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.UseCors("AllowSpecificOrigin");
+
 /**********************************************/
 var startup = new Startup(builder.Configuration); // My custom startup class.
 startup.Configure(app, app.Environment,app.Services); // Configure the HTTP request pipeline.

@@ -22,7 +22,7 @@ public partial class ReceiveItemsNewDto
     public string UnitMasterUnitCode { get; set; }
 
     public int? Qty { get; set; }
-
+    public int? RelasedQty { get; set; }
     public long? CustomerMasterId { get; set; }
     public string CustomerMasterCustCode { get; set; }
     public string CustomerMasterCustName { get; set; }
@@ -43,7 +43,7 @@ public partial class ReceiveItemsNewDto
 
     public long? JobOrderId { get; set; }
     public string JobOrderJobFIleNo { get; set; }
-    public string JobOrderJobStatus { get; set; }
+    public int? JobOrderJobStatus { get; set; }
 
 
     public string? Pono { get; set; }

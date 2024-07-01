@@ -19,7 +19,7 @@ namespace Application.Operations.JobOrder.Commands
 
         public int? Service { get; set; }
 
-        public string? JobStatus { get; set; }
+        public int? JobStatus { get; set; }
 
         public string? JobRefNo { get; set; }
 

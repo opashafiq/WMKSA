@@ -29,6 +29,7 @@ namespace Application.Operations.JobOrder.CommandHandlers
         {
 
             var jobOrder = _mapper.Map<Domain.Entities.JobOrder>(request);
+            jobOrder.JobStatus = 1;
 
             return await _jobOrderRepository.AddJobOrder(jobOrder);
         }

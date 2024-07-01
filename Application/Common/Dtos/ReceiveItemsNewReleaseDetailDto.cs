@@ -13,6 +13,6 @@ public partial class ReceiveItemsNewReleaseDetailDto
 
     public long? JobOrderId { get; set; }
     public string JobOrderJobFIleNo { get; set; }
-    public string JobOrderJobStatus { get; set; }
+    public int? JobOrderJobStatus { get; set; }
 
 }
