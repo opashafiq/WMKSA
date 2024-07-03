@@ -30,7 +30,7 @@ public partial class DriverMaster
     public string DriverNo { get; set; } = null!;
 
     public int TransporterMasterId { get; set; }
-    public byte[]? Image { get; set; }
+    public byte[]? ImageBase64 { get; set; }
 
     public virtual ICollection<TruckMaster> TruckMasters { get; set; } = new List<TruckMaster>();
 

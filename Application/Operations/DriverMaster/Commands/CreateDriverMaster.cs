@@ -32,10 +32,10 @@ namespace Application.Operations.DriverMaster.Commands
         public DateTime EntryDate { get; set; }
 
         public string DriverNo { get; set; } = null!;
-
+        
         public int TransporterMasterId { get; set; }
 
-        public byte[]? Image { get; set; }
+        public byte[]? ImageBase64 { get; set; }
 
     }
 }

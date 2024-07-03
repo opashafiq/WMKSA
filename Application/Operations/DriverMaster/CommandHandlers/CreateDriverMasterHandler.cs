@@ -29,6 +29,7 @@ namespace Application.Operations.DriverMaster.CommandHandlers
         {
 
             var driverMaster = _mapper.Map<Domain.Entities.DriverMaster>(request);
+            if(request.ImageBase64 == null) { driverMaster.ImageBase64=null; }
 
             return await _driverMasterRepository.AddDriverMaster(driverMaster);
         }

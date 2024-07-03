@@ -41,7 +41,7 @@ namespace Application.Operations.DriverMaster.QueryHandlers
                 EntryDate = driverMaster.EntryDate,
                 DriverNo = driverMaster.DriverNo,
                 TransporterMasterId = driverMaster.TransporterMasterId,
-                ImageBase64 = driverMaster.Image == null? null: Convert.ToBase64String(driverMaster.Image)
+                ImageBase64 = driverMaster.ImageBase64 == null? null: Convert.ToBase64String(driverMaster.ImageBase64)
             };
 
             ICollection<DriverMasterDto> listDriverMasterDto = new HashSet<DriverMasterDto>();

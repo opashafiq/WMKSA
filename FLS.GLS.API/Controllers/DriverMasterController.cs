@@ -55,7 +55,7 @@ namespace FLS.GLS.API.Controllers
             {
                 // Convert the uploaded file to a byte array
                 byte[] imageData;
-                if (request.Image == null)
+                if (request.ImageBase64 == null)
                 {
                     imageData = null;
                 }
@@ -63,7 +63,7 @@ namespace FLS.GLS.API.Controllers
                 {
                     using (var memoryStream = new MemoryStream())
                     {
-                        await request.Image.CopyToAsync(memoryStream);
+                        await request.ImageBase64.CopyToAsync(memoryStream);
                         imageData = memoryStream.ToArray();
                     }
                 }
@@ -83,7 +83,7 @@ namespace FLS.GLS.API.Controllers
                     EntryDate = request.EntryDate,
                     DriverNo = request.DriverNo,
                     TransporterMasterId = request.TransporterMasterId,
-                    Image = imageData
+                    ImageBase64 = imageData
                 };
                 
                 var _driverMaster = await _sender.Send(command);
@@ -116,11 +116,11 @@ namespace FLS.GLS.API.Controllers
                 // Convert the uploaded file to a byte array
                 byte[] imageData = null;
                 // Check if the image file is provided and not null
-                if (request.Image != null)
+                if (request.ImageBase64 != null)
                 {
                     using (var memoryStream = new MemoryStream())
                     {
-                        await request.Image.CopyToAsync(memoryStream);
+                        await request.ImageBase64.CopyToAsync(memoryStream);
                         imageData = memoryStream.ToArray();
                     }
                 }
@@ -140,7 +140,7 @@ namespace FLS.GLS.API.Controllers
                     EntryDate = request.EntryDate,
                     DriverNo = request.DriverNo,
                     TransporterMasterId = request.TransporterMasterId,
-                    Image = imageData
+                    ImageBase64 = imageData
                 };
                 var _driverMaster = await _sender.Send(command);
 

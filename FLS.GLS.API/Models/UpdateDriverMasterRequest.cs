@@ -27,6 +27,6 @@
 
         public int TransporterMasterId { get; set; }
 
-        public IFormFile Image { get; set; }
+        public IFormFile? ImageBase64 { get; set; }
     }
 }
