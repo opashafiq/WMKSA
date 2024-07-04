@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
 using Application.Operations.Person.Commands;
 using Domain.Entities;
+using Application.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -43,6 +44,7 @@ builder.Services.AddScoped<IReceiveItemsNewRepository, ReceiveItemsNewRepository
 builder.Services.AddScoped<IReceiveItemsNewDetailRepository, ReceiveItemsNewDetailRepository>();
 builder.Services.AddScoped<IReceiveItemsNewReleaseRepository, ReceiveItemsNewReleaseRepository>();
 builder.Services.AddScoped<IReceiveItemsNewReleaseDetailRepository, ReceiveItemsNewReleaseDetailRepository>();
+builder.Services.AddScoped<IErrorHandlingService, ErrorHandlingService>();
 
 
 object value = builder.Services.AddApplication().AddInfrastructure();

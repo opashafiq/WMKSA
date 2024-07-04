@@ -23,8 +23,6 @@ namespace Application.Operations.DriverMaster.CommandHandlers
             _mapper = mapper;
         }
 
-
-
         async Task<Domain.Entities.DriverMaster> IRequestHandler<UpdateDriverMaster, Domain.Entities.DriverMaster>.Handle(UpdateDriverMaster request, CancellationToken cancellationToken)
         {
 

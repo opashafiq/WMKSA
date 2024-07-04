@@ -33,8 +33,8 @@ namespace FLS.GLS.API.Controllers
         {
             var receiveItemsNewReleases = await _sender.Send(new GetAllReceiveItemsNewRelease());
             return Ok(receiveItemsNewReleases);
-        }
-
+        }        
+        
 
         //Task<ICollection<ReceiveItemsNewRelease>>
 

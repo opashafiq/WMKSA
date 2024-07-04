@@ -9,6 +9,7 @@ using Application.Operations.ReceiveItemsNew.Queries;
 using FLS.GLS.API.Classes;
 using System.Xml;
 using Domain.Entities;
+using Application.Operations.ReceiveItemsNewRelease.Queries;
 
 namespace FLS.GLS.API.Controllers
 {
@@ -35,6 +36,18 @@ namespace FLS.GLS.API.Controllers
             return Ok(receiveItemsNews);
         }
 
+        [HttpGet("getgatein")]
+        public async Task<ActionResult> GetGateIn(int? customerId, int? subCustomerId,
+            DateTime? dateStart, DateTime? dateTo, int? status, int? itemId,
+            string? receiptNo, string? poNumber
+        )
+        {
+            var receiveItemsNewFromUSPGateIn = await _sender.Send(new GetAllReceiveItemsNewFromUSPGatein(
+                customerId,subCustomerId, dateStart, dateTo,    
+                status, itemId, receiptNo, poNumber
+                ));
+            return Ok(receiveItemsNewFromUSPGateIn);
+        }
 
         //Task<ICollection<ReceiveItemsNew>>
 

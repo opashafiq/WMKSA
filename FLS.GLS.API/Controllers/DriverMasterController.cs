@@ -11,6 +11,7 @@ using System.Xml;
 using FLS.GLS.API.Models;
 using Azure.Core;
 using Domain.Entities;
+using Application.Abstractions;
 
 namespace FLS.GLS.API.Controllers
 {
@@ -20,8 +21,13 @@ namespace FLS.GLS.API.Controllers
     public class DriverMasterController : ControllerBase
     {
         private readonly ISender _sender;
+        private readonly IErrorHandlingService _errorHandlingService;
 
-        public DriverMasterController(ISender sender) => _sender = sender;
+        public DriverMasterController(ISender sender, IErrorHandlingService errorHandlingService)
+        {
+            _sender = sender;
+            _errorHandlingService = errorHandlingService;
+        }
 
         [HttpGet("{id}")]
         public async Task<ActionResult> GetById(int id)
@@ -34,6 +40,13 @@ namespace FLS.GLS.API.Controllers
         public async Task<ActionResult> GetAll()
         {
             var driverMasters = await _sender.Send(new GetAllDriverMaster());
+            return Ok(driverMasters);
+        }          
+        
+        [HttpGet("getallwithimage")]
+        public async Task<ActionResult> GetAllWithImage()
+        {
+            var driverMasters = await _sender.Send(new GetAllDriverMasterWithImage());
             return Ok(driverMasters);
         }        
         
@@ -172,7 +185,7 @@ namespace FLS.GLS.API.Controllers
                 return Ok(response);
             } catch(Exception ex)
             {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, _errorHandlingService.HandleError(ex));
             }
         }
     }
