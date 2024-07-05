@@ -12,6 +12,7 @@ namespace Application.Abstractions
         Task<ICollection<Domain.Entities.TruckMaster>> GetAll();
 
         Task<Domain.Entities.TruckMaster> GetTruckMasterById(int truckMasterId);
+        Task<Domain.Entities.TruckMaster> GetTruckMasterByTruckNo(string truckNo);
 
         Task<Domain.Entities.TruckMaster> AddTruckMaster(Domain.Entities.TruckMaster toCreate);
 

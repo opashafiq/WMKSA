@@ -55,7 +55,12 @@ namespace Infrastructure.Repositories
 
         public async Task<TruckMaster> GetTruckMasterById(int truckMasterId)
         {
-            return await _context.TruckMaster.FirstOrDefaultAsync(p => p.Id == truckMasterId);
+            return await _context.TruckMaster.FirstOrDefaultAsync(p => p.Id == truckMasterId) ?? new TruckMaster();
+        }        
+        
+        public async Task<TruckMaster> GetTruckMasterByTruckNo(string truckNo)
+        {
+            return await _context.TruckMaster.FirstOrDefaultAsync(p => p.TruckNo == truckNo)?? new TruckMaster();
         }
 
         public async Task<TruckMaster> UpdateTruckMaster(TruckMaster toUpdate )

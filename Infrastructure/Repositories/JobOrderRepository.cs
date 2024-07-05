@@ -57,6 +57,11 @@ namespace Infrastructure.Repositories
         public async Task<JobOrder> GetJobOrderById(int jobOrderId)
         {
             return await _context.JobOrder.FirstOrDefaultAsync(p => p.Id == jobOrderId)?? new JobOrder();
+        }        
+        
+        public async Task<ICollection<JobOrder>> GetJobOrderByCustomerMasterId(long customerMasterId)
+        {
+            return await _context.JobOrder.Where(p => p.CustomerMasterId == customerMasterId).ToListAsync();
         }
 
         public async Task<JobOrder> UpdateJobOrder(JobOrder toUpdate )

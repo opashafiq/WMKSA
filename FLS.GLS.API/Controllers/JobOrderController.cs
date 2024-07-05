@@ -10,6 +10,7 @@ using FLS.GLS.API.Classes;
 using System.Xml;
 using Domain.Entities;
 using Application.Common.Dtos;
+using Application.Abstractions;
 
 namespace FLS.GLS.API.Controllers
 {
@@ -19,22 +20,38 @@ namespace FLS.GLS.API.Controllers
     public class JobOrderController : ControllerBase
     {
         private readonly ISender _sender;
+        private readonly IErrorHandlingService _errorHandlingService;
 
-        public JobOrderController(ISender sender) => _sender = sender;
+        public JobOrderController(ISender sender, IErrorHandlingService errorHandlingService)
+        {
+            _sender = sender;
+            _errorHandlingService = errorHandlingService;
+
+        }
 
         [HttpGet("{id}")]
         public async Task<ActionResult> GetById(int id)
         {
-            //var jobOrder = await _sender.Send(new GetJobOrderById(id));
-            //return jobOrder== null ? NotFound() : Ok(jobOrder);
-            return Ok(await _sender.Send(new GetJobOrderById(id)));
+           return Ok(await _sender.Send(new GetJobOrderById(id)));
+        }           
+        
+        [HttpGet("getbycustomermasterid/{customermasterid}")]
+        public async Task<ActionResult> GetByCustomerMasterId(long customermasterid)
+        {
+           return Ok(await _sender.Send(new GetJobOrderByCustomerMasterId(customermasterid)));
         }        
         
         [HttpGet("getall")]
         public async Task<ActionResult> GetAll()
         {
-            var jobOrders = await _sender.Send(new GetAllJobOrder());
-            return Ok(jobOrders);
+            try
+            {
+                var jobOrders = await _sender.Send(new GetAllJobOrder());
+                return Ok(jobOrders);
+            } catch (Exception ex)
+            {
+                return StatusCode(500, _errorHandlingService.HandleError(ex));
+            }
         }
 
 

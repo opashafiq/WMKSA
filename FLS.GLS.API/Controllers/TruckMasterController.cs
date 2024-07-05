@@ -33,15 +33,40 @@ namespace FLS.GLS.API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult> GetById(int id)
         {
-            var truckMaster = await _sender.Send(new GetTruckMasterById(id));
-            return Ok(truckMaster);
+            try
+            {
+                var truckMaster = await _sender.Send(new GetTruckMasterById(id));
+                return Ok(truckMaster);
+            } catch (Exception ex)
+            {
+                return StatusCode(500, _errorHandlingService.HandleError(ex));
+            }
+        }          
+        
+        [HttpGet("getbytruckno/{truckno}")]
+        public async Task<ActionResult> GetByTruckNo(string truckno)
+        {
+            try
+            {
+                var truckMaster = await _sender.Send(new GetTruckMasterByTruckNo(truckno));
+                return Ok(truckMaster);
+            } catch(Exception ex)
+            {
+                return StatusCode(500, _errorHandlingService.HandleError(ex));
+            }
         }        
         
         [HttpGet("getall")]
         public async Task<ActionResult> GetAll()
         {
-            var truckMasters = await _sender.Send(new GetAllTruckMaster());
-            return Ok(truckMasters);
+            try
+            {
+                var truckMasters = await _sender.Send(new GetAllTruckMaster());
+                return Ok(truckMasters);
+            } catch (Exception ex)
+            {
+                return StatusCode(500, _errorHandlingService.HandleError(ex));
+            }
         }
 
 
@@ -67,7 +92,7 @@ namespace FLS.GLS.API.Controllers
                 return Created(createdResourceUri, response);
             } catch (Exception ex)
             {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, _errorHandlingService.HandleError(ex));
             }
 
         }
@@ -87,7 +112,7 @@ namespace FLS.GLS.API.Controllers
 
                 return Ok(response);
             } catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, _errorHandlingService.HandleError(ex));
             }
         }
 
