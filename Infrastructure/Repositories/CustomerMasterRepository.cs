@@ -53,9 +53,9 @@ namespace Infrastructure.Repositories
             return await _context.CustomerMaster.ToListAsync();
         }
 
-        public async Task<CustomerMaster> GetCustomerMasterById(int branchMasterId)
+        public async Task<CustomerMaster> GetCustomerMasterById(long customerMasterId)
         {
-            return await _context.CustomerMaster.FirstOrDefaultAsync(p => p.Id == branchMasterId);
+            return await _context.CustomerMaster.FirstOrDefaultAsync(p => p.Id == customerMasterId);
         }
 
         public async Task<CustomerMaster> UpdateCustomerMaster(CustomerMaster toUpdate )

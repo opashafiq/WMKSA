@@ -11,7 +11,7 @@ namespace Application.Abstractions
     {
         Task<ICollection<Domain.Entities.CustomerMaster>> GetAll();
 
-        Task<Domain.Entities.CustomerMaster> GetCustomerMasterById(int customerMasterId);
+        Task<Domain.Entities.CustomerMaster> GetCustomerMasterById(long customerMasterId);
 
         Task<Domain.Entities.CustomerMaster> AddCustomerMaster(Domain.Entities.CustomerMaster toCreate);
 
