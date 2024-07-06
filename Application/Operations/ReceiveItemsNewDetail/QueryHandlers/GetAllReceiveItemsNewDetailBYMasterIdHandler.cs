@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Application.Operations.ReceiveItemsNewDetail.QueryHandlers
 {
-    public class GetAllReceiveItemsNewDetailHandler : IRequestHandler<GetAllReceiveItemsNewDetail, ICollection<ReceiveItemsNewDetailDto>>
+    public class GetAllReceiveItemsNewDetailBYMasterIdHandler : IRequestHandler<GetAllReceiveItemsNewDetailByMasterId, ICollection<ReceiveItemsNewDetailDto>>
     {
         private readonly IReceiveItemsNewRepository _receiveItemsNewRepository;
         private readonly IReceiveItemsNewDetailRepository _receiveItemsNewDetailRepository;
@@ -21,7 +21,7 @@ namespace Application.Operations.ReceiveItemsNewDetail.QueryHandlers
         private readonly IRecItemMasterRepository _recItemMasterRepository;
         private readonly IUnitMasterRepository _unitMasterRepository;
 
-        public GetAllReceiveItemsNewDetailHandler(
+        public GetAllReceiveItemsNewDetailBYMasterIdHandler(
             IReceiveItemsNewRepository receiveItemsNewRepository,
             IReceiveItemsNewDetailRepository receiveItemsNewDetailRepository,
             IItemsRateMasterDetailsRepository itemsRateMasterDetailRepository,
@@ -39,10 +39,10 @@ namespace Application.Operations.ReceiveItemsNewDetail.QueryHandlers
             _unitMasterRepository = unitMasterRepository;
         }
 
-        public async Task<ICollection<ReceiveItemsNewDetailDto>> Handle(GetAllReceiveItemsNewDetail request, CancellationToken cancellationToken)
+        public async Task<ICollection<ReceiveItemsNewDetailDto>> Handle(GetAllReceiveItemsNewDetailByMasterId request, CancellationToken cancellationToken)
         {
             var receiveItemsNewDetails =
-                              (from ri in await _receiveItemsNewDetailRepository.GetAll()
+                              (from ri in await _receiveItemsNewDetailRepository.GetAllbyMasterId(request.ReceiveItemsNewId)
                                join rin in await _receiveItemsNewRepository.GetAll()
                                on ri.ReceiveItemsNewId equals rin.Id
                                join irmd in await _itemsRateMasterDetailRepository.GetAll()

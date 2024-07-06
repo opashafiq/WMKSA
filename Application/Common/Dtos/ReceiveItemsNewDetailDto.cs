@@ -7,6 +7,7 @@ public partial class ReceiveItemsNewDetailDto
 {
     public long Id { get; set; }
 
+    public long ReceiveItemsNewId { get; set; }
     public long? ItemsRateMasterDetailId { get; set; }
     public int ItemsRateMasterId { get; set; }
 

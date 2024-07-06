@@ -33,6 +33,13 @@ namespace FLS.GLS.API.Controllers
         {
             var receiveItemsNewDetails = await _sender.Send(new GetAllReceiveItemsNewDetail());
             return Ok(receiveItemsNewDetails);
+        }        
+        
+        [HttpGet("getallbymasterid/{receiveitemsnewid}")]
+        public async Task<ActionResult> GetAllByMasterId(long receiveitemsnewid)
+        {
+            var receiveItemsNewDetails = await _sender.Send(new GetAllReceiveItemsNewDetailByMasterId(receiveitemsnewid));
+            return Ok(receiveItemsNewDetails);
         }
 
 

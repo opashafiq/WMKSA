@@ -12,6 +12,7 @@ namespace Application.Operations.ReceiveItemsNewDetail.Commands
     public partial class CreateReceiveItemsNewDetail : IRequest<Domain.Entities.ReceiveItemsNewDetail>
     {
         public long? ItemsRateMasterDetailId { get; set; }
+        public long ReceiveItemsNewId { get; set; }
 
         public int? Freedays { get; set; }
 

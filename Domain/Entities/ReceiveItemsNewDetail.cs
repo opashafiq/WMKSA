@@ -8,6 +8,7 @@ public partial class ReceiveItemsNewDetail
     public long Id { get; set; }
 
     public long? ItemsRateMasterDetailId { get; set; }
+    public long ReceiveItemsNewId { get; set; }
 
     public int? Freedays { get; set; }
 
@@ -22,4 +23,5 @@ public partial class ReceiveItemsNewDetail
     public decimal? Trate { get; set; }
 
     public virtual ItemsRateMasterDetail? ItemsRateMasterDetail { get; set; }
+    public virtual ReceiveItemsNew? ReceiveItemsNew { get; set; }
 }

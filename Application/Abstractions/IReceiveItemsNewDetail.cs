@@ -10,6 +10,7 @@ namespace Application.Abstractions
     public interface IReceiveItemsNewDetailRepository
     {
         Task<ICollection<Domain.Entities.ReceiveItemsNewDetail>> GetAll();
+        Task<ICollection<Domain.Entities.ReceiveItemsNewDetail>> GetAllbyMasterId(long receiveItemsNewId);
 
         Task<Domain.Entities.ReceiveItemsNewDetail> GetReceiveItemsNewDetailById(int receiveItemsNewDetailId);
 

@@ -13,6 +13,7 @@ namespace Application.Operations.ReceiveItemsNewDetail.QueryHandlers
 {
     public class GetReceiveItemsNewDetailByIdHandler : IRequestHandler<GetReceiveItemsNewDetailById, ReceiveItemsNewDetailDto>
     {
+        private readonly IReceiveItemsNewRepository _receiveItemsNewRepository;
         private readonly IReceiveItemsNewDetailRepository _receiveItemsNewDetailRepository;
         private readonly IItemsRateMasterDetailsRepository _itemsRateMasterDetailRepository;
         private readonly IItemsRateMasterRepository _itemsRateMasterRepository;
@@ -21,6 +22,7 @@ namespace Application.Operations.ReceiveItemsNewDetail.QueryHandlers
         private readonly IUnitMasterRepository _unitMasterRepository; 
         
         public GetReceiveItemsNewDetailByIdHandler(
+            IReceiveItemsNewRepository receiveItemsNewRepository,
             IReceiveItemsNewDetailRepository receiveItemsNewDetailRepository,
             IItemsRateMasterDetailsRepository itemsRateMasterDetailRepository,
             IItemsRateMasterRepository itemsRateMasterRepository,
@@ -28,6 +30,7 @@ namespace Application.Operations.ReceiveItemsNewDetail.QueryHandlers
             IRecItemMasterRepository recItemMasterRepository,
             IUnitMasterRepository unitMasterRepository)
         {
+            _receiveItemsNewRepository= receiveItemsNewRepository;
             _receiveItemsNewDetailRepository = receiveItemsNewDetailRepository;
             _itemServiceRepository = itemServiceRepository;
             _itemsRateMasterDetailRepository = itemsRateMasterDetailRepository;
@@ -45,7 +48,9 @@ namespace Application.Operations.ReceiveItemsNewDetail.QueryHandlers
 
 
             var finalReceiveItemsNewDetails =
-                    (from ri in await _receiveItemsNewDetailRepository.GetAll()
+                    (from ri in listReceiveItemsNewDetails
+                     join rin in await _receiveItemsNewRepository.GetAll()
+                     on ri.ReceiveItemsNewId equals rin.Id
                      join irmd in await _itemsRateMasterDetailRepository.GetAll()
                      on ri.ItemsRateMasterDetailId equals irmd.Id
                      join its in await _itemServiceRepository.GetAll()
@@ -59,6 +64,7 @@ namespace Application.Operations.ReceiveItemsNewDetail.QueryHandlers
                      select new ReceiveItemsNewDetailDto
                      {
                          Id = ri.Id,
+                         ReceiveItemsNewId=ri.ReceiveItemsNewId,
                          ItemsRateMasterDetailId = ri.ItemsRateMasterDetailId,
                          ItemServiceId = irmd.ItemServiceId,
                          ItemServiceItemsService = its.ItemsService,

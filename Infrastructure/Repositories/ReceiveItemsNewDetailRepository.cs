@@ -52,10 +52,15 @@ namespace Infrastructure.Repositories
         {
             return await _context.ReceiveItemsNewDetails.ToListAsync();
         }
+                
+        public async Task<ICollection<ReceiveItemsNewDetail>> GetAllbyMasterId(long receiveItemsNewId)
+        {
+            return await _context.ReceiveItemsNewDetails.Where(p=> p.ReceiveItemsNewId==receiveItemsNewId).ToListAsync();
+        }
 
         public async Task<ReceiveItemsNewDetail> GetReceiveItemsNewDetailById(int receiveItemsNewDetailId)
         {
-            return await _context.ReceiveItemsNewDetails.FirstOrDefaultAsync(p => p.Id == receiveItemsNewDetailId);
+            return await _context.ReceiveItemsNewDetails.FirstOrDefaultAsync(p => p.Id == receiveItemsNewDetailId)??new ReceiveItemsNewDetail();
         }
 
         public async Task<ReceiveItemsNewDetail> UpdateReceiveItemsNewDetail(ReceiveItemsNewDetail toUpdate)
