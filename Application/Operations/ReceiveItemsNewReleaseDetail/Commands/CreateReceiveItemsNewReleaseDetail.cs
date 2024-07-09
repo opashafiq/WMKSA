@@ -15,7 +15,7 @@ namespace Application.Operations.ReceiveItemsNewReleaseDetail.Commands
 
         public int? Qty { get; set; }
 
-        public long? JobOrderId { get; set; }
+        public long? ReceiveItemsNewId { get; set; }
 
     }
 }

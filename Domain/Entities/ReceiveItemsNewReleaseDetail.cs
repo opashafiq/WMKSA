@@ -11,9 +11,9 @@ public partial class ReceiveItemsNewReleaseDetail
 
     public int? Qty { get; set; }
 
-    public long? JobOrderId { get; set; }
+    public long? ReceiveItemsNewId { get; set; }
 
-    public virtual JobOrder? JobOrder { get; set; }
+    public virtual ReceiveItemsNew? ReceiveItemsNew { get; set; }
 
     public virtual ReceiveItemsNewRelease? ReceiveItemsNewRelease { get; set; }
 }

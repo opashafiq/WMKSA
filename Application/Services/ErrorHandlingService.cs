@@ -17,6 +17,10 @@ namespace Application.Services
                 {
                     return "There is reference to another table.";
                 }
+                else
+                {
+                    return e.InnerException.Message;
+                }
             }
             else
             {

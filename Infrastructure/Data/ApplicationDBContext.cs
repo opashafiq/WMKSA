@@ -35,6 +35,7 @@ namespace Infrastructure.Data
 
         //SP
         public DbSet<ReceiveItemsNewFromUSPGatein> ReceiveItemsNewFromUSPGatein { get; set; }
+        public DbSet<ReceiveItemsNewReleaseGateOut> ReceiveItemsNewReleaseGateOut { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -43,6 +44,7 @@ namespace Infrastructure.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
             builder.Entity<ReceiveItemsNewFromUSPGatein>().HasNoKey();
+            builder.Entity<ReceiveItemsNewReleaseGateOut>().HasNoKey();
  
 
         }

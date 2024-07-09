@@ -11,7 +11,7 @@ namespace Application.Abstractions
     {
         Task<ICollection<Domain.Entities.JobOrder>> GetAll();
 
-        Task<Domain.Entities.JobOrder> GetJobOrderById(int jobOrderId);
+        Task<Domain.Entities.JobOrder> GetJobOrderById(long jobOrderId);
         Task<ICollection<Domain.Entities.JobOrder>> GetJobOrderByCustomerMasterId(long customerMasterId);
 
         Task<Domain.Entities.JobOrder> AddJobOrder(Domain.Entities.JobOrder toCreate);

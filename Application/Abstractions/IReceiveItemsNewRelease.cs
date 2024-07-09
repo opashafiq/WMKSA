@@ -11,6 +11,19 @@ namespace Application.Abstractions
     {
         Task<ICollection<Domain.Entities.ReceiveItemsNewRelease>> GetAll();
 
+        Task<ICollection<Domain.Entities.ReceiveItemsNewReleaseGateOut>> GetGateOutDataAsync(
+            int? customerId,
+            int? subCustomerId,
+            DateTime? dateStart,
+            DateTime? dateTo,
+            int? status,
+            int? itemId,
+            string receiptNo,
+            string poNumber,
+            string truckNo,
+            string invoiceNo
+        );
+
         Task<Domain.Entities.ReceiveItemsNewRelease> GetReceiveItemsNewReleaseById(int receiveItemsNewReleaseId);
 
         Task<Domain.Entities.ReceiveItemsNewRelease> AddReceiveItemsNewRelease(Domain.Entities.ReceiveItemsNewRelease toCreate);

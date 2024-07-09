@@ -15,35 +15,35 @@ namespace Application.Operations.ReceiveItemsNewReleaseDetail.QueryHandlers
     {
         private readonly IReceiveItemsNewReleaseDetailRepository _receiveItemsNewReleaseDetailRepository;
         private readonly IReceiveItemsNewReleaseRepository _receiveItemsNewReleaseRepository;
-        private readonly IJobOrderRepository _jobOrderRepository;
+        private readonly IReceiveItemsNewRepository _receiveItemsNewRepository;
 
         public GetAllReceiveItemsNewReleaseDetailHandler(
             IReceiveItemsNewReleaseDetailRepository receiveItemsNewReleaseDetailRepository,
             IReceiveItemsNewReleaseRepository receiveItemsNewReleaseRepository,
-            IJobOrderRepository jobOrderRepository
+            IReceiveItemsNewRepository receiveItemsNewRepository
             )
         {
             _receiveItemsNewReleaseDetailRepository = receiveItemsNewReleaseDetailRepository;
             _receiveItemsNewReleaseRepository = receiveItemsNewReleaseRepository;
-            _jobOrderRepository = jobOrderRepository;
+            _receiveItemsNewRepository = receiveItemsNewRepository;
         }
 
         public async Task<ICollection<ReceiveItemsNewReleaseDetailDto>> Handle(GetAllReceiveItemsNewReleaseDetail request, CancellationToken cancellationToken)
         {
+            var t = await _receiveItemsNewReleaseDetailRepository.GetAll();
             var receiveItemsNewReleaseDetailDto =
                               (from rid in await _receiveItemsNewReleaseDetailRepository.GetAll()
                                join ri in await _receiveItemsNewReleaseRepository.GetAll()
                                on rid.ReceiveItemsNewReleaseId equals ri.Id                               
-                               join jo in await _jobOrderRepository.GetAll()
-                               on rid.JobOrderId equals jo.Id
+                               join rci in await _receiveItemsNewRepository.GetAll()
+                               on rid.ReceiveItemsNewId equals rci.Id
                                select new ReceiveItemsNewReleaseDetailDto
                                {
                                    Id = rid.Id,
                                    ReceiveItemsNewReleaseId = rid.ReceiveItemsNewReleaseId,
                                    Qty=rid.Qty,
-                                   JobOrderId=rid.JobOrderId,
-                                   JobOrderJobFIleNo=jo.JobFileNo,
-                                   JobOrderJobStatus=jo.JobStatus
+                                   ReceiveItemsNewId=rid.ReceiveItemsNewId,
+                                   ReceiveItemsNewEIRNo=rci.Eirno
                                    
 
                                }).ToList();

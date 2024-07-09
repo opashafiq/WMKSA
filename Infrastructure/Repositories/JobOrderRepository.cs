@@ -54,7 +54,7 @@ namespace Infrastructure.Repositories
             return await _context.JobOrder.ToListAsync();
         }
 
-        public async Task<JobOrder> GetJobOrderById(int jobOrderId)
+        public async Task<JobOrder> GetJobOrderById(long jobOrderId)
         {
             return await _context.JobOrder.FirstOrDefaultAsync(p => p.Id == jobOrderId)?? new JobOrder();
         }        

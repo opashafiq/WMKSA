@@ -11,8 +11,8 @@ public partial class ReceiveItemsNewReleaseDetailDto
 
     public int? Qty { get; set; }
 
-    public long? JobOrderId { get; set; }
-    public string JobOrderJobFIleNo { get; set; }
-    public int? JobOrderJobStatus { get; set; }
+    public long? ReceiveItemsNewId { get; set; }
+    public string? ReceiveItemsNewEIRNo { get; set; }
+    
 
 }
