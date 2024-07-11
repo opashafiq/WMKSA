@@ -55,7 +55,7 @@ namespace Infrastructure.Repositories
 
         public async Task<ItemService> GetItemServiceById(int itemServiceId)
         {
-            return await _context.ItemService.FirstOrDefaultAsync(p => p.Id == itemServiceId);
+            return await _context.ItemService.FirstOrDefaultAsync(p => p.Id == itemServiceId)??new ItemService();
         }
 
         public async Task<ItemService> UpdateItemService(ItemService toUpdate )

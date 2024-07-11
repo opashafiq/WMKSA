@@ -55,7 +55,7 @@ namespace Infrastructure.Repositories
 
         public async Task<VendorMaster> GetVendorMasterById(int vendorMasterId)
         {
-            return await _context.VendorMaster.FirstOrDefaultAsync(p => p.Id == vendorMasterId);
+            return await _context.VendorMaster.FirstOrDefaultAsync(p => p.Id == vendorMasterId)??new VendorMaster();
         }
 
         public async Task<VendorMaster> UpdateVendorMaster(VendorMaster toUpdate )

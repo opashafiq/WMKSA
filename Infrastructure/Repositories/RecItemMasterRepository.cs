@@ -55,7 +55,7 @@ namespace Infrastructure.Repositories
 
         public async Task<RecItemMaster> GetRecItemMasterById(int recItemMasterId)
         {
-            return await _context.RecItemMaster.FirstOrDefaultAsync(p => p.Id == recItemMasterId);
+            return await _context.RecItemMaster.FirstOrDefaultAsync(p => p.Id == recItemMasterId)??new RecItemMaster();
         }
 
         public async Task<RecItemMaster> UpdateRecItemMaster(RecItemMaster toUpdate )

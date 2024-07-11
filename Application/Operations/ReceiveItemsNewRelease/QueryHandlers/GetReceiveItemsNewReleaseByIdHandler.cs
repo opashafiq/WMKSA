@@ -49,7 +49,7 @@ namespace Application.Operations.ReceiveItemsNewRelease.QueryHandlers
             
 
             var finalReceiveItemsNewRelease =
-                    (from ri in await _receiveItemsNewReleaseRepository.GetAll()
+                    (from ri in listReceiveItemsNewRelease
                      join cm in await _customerMasterRepository.GetAll()
                      on ri.CustomerMasterId equals cm.Id
                      join scm in await _subCustomerMasterRepository.GetAll()

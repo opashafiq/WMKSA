@@ -55,7 +55,7 @@ namespace Infrastructure.Repositories
 
         public async Task<BranchMaster> GetBranchMasterById(int branchMasterId)
         {
-            return await _context.BranchMaster.FirstOrDefaultAsync(p => p.Id == branchMasterId);
+            return await _context.BranchMaster.FirstOrDefaultAsync(p => p.Id == branchMasterId)??new BranchMaster();
         }
 
         public async Task<BranchMaster> UpdateBranchMaster(BranchMaster toUpdate )

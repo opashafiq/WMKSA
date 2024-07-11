@@ -35,7 +35,7 @@ namespace Application.Operations.ReceiveItemsNewReleaseDetails.QueryHandlers
             
 
             var finalReceiveItemsNewReleaseDetails =
-                    (from rid in await _receiveItemsNewReleaseDetailRepository.GetAll()
+                    (from rid in listReceiveItemsNewReleaseDetail
                      join ri in await _receiveItemsNewReleaseRepository.GetAll()
                      on rid.ReceiveItemsNewReleaseId equals ri.Id
                      join rci in await _receiveItemsNewRepository.GetAll()

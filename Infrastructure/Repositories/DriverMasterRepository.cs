@@ -55,7 +55,7 @@ namespace Infrastructure.Repositories
 
         public async Task<DriverMaster> GetDriverMasterById(int driverMasterId)
         {
-            return await _context.DriverMaster.FirstOrDefaultAsync(p => p.Id == driverMasterId);
+            return await _context.DriverMaster.FirstOrDefaultAsync(p => p.Id == driverMasterId)??new DriverMaster();
         }
 
         public async Task<DriverMaster> UpdateDriverMaster(DriverMaster toUpdate )

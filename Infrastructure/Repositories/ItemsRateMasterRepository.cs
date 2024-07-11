@@ -55,7 +55,7 @@ namespace Infrastructure.Repositories
 
         public async Task<ItemsRateMaster> GetItemsRateMasterById(int itemsRateMasterId)
         {
-            return await _context.ItemsRateMaster.FirstOrDefaultAsync(p => p.Id == itemsRateMasterId);
+            return await _context.ItemsRateMaster.FirstOrDefaultAsync(p => p.Id == itemsRateMasterId)??new ItemsRateMaster();
         }
 
         public async Task<ItemsRateMaster> UpdateItemsRateMaster(ItemsRateMaster toUpdate )

@@ -55,7 +55,7 @@ namespace Infrastructure.Repositories
 
         public async Task<PackageMaster> GetPackageMasterById(int packageMasterId)
         {
-            return await _context.PackageMaster.FirstOrDefaultAsync(p => p.Id == packageMasterId);
+            return await _context.PackageMaster.FirstOrDefaultAsync(p => p.Id == packageMasterId)?? new PackageMaster();
         }
 
         public async Task<PackageMaster> UpdatePackageMaster(PackageMaster toUpdate )

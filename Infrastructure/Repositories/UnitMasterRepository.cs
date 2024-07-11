@@ -55,7 +55,7 @@ namespace Infrastructure.Repositories
 
         public async Task<UnitMaster> GetUnitMasterById(int unitMasterId)
         {
-            return await _context.UnitMaster.FirstOrDefaultAsync(p => p.Id == unitMasterId);
+            return await _context.UnitMaster.FirstOrDefaultAsync(p => p.Id == unitMasterId)??new UnitMaster();
         }
 
         public async Task<UnitMaster> UpdateUnitMaster(UnitMaster toUpdate )

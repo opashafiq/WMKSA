@@ -55,7 +55,7 @@ namespace Infrastructure.Repositories
 
         public async Task<TransporterMaster> GetTransporterMasterById(int transporterMasterId)
         {
-            return await _context.TransporterMaster.FirstOrDefaultAsync(p => p.Id == transporterMasterId);
+            return await _context.TransporterMaster.FirstOrDefaultAsync(p => p.Id == transporterMasterId)??new TransporterMaster();
         }
 
         public async Task<TransporterMaster> UpdateTransporterMaster(TransporterMaster toUpdate )

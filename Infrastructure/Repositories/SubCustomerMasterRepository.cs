@@ -52,7 +52,7 @@ namespace Infrastructure.Repositories
 
         public async Task<SubCustomerMaster> GetSubCustomerMasterById(int subCustomerMasterId)
         {
-            return await _context.SubCustomerMaster.FirstOrDefaultAsync(p => p.Id == subCustomerMasterId);
+            return await _context.SubCustomerMaster.FirstOrDefaultAsync(p => p.Id == subCustomerMasterId)?? new SubCustomerMaster();
         }
 
         public async Task<SubCustomerMaster> UpdateSubCustomerMaster(SubCustomerMaster toUpdate )
