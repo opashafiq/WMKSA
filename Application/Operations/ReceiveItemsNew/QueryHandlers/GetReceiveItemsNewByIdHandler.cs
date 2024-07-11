@@ -54,7 +54,7 @@ namespace Application.Operations.ReceiveItemsNew.QueryHandlers
             
 
             var finalReceiveItemsNewDto =
-                    (from ri in await _receiveItemsNewRepository.GetAll()
+                    (from ri in listReceiveItemsNew
                      join rim in await _recItemMasterRepository.GetAll()
                      on ri.RecItemMasterId equals rim.Id
                      join um in await _unitMasterRepository.GetAll()

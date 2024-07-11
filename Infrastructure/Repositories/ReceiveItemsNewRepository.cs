@@ -63,7 +63,7 @@ namespace Infrastructure.Repositories
 
         public async Task<ReceiveItemsNew> GetReceiveItemsNewById(int receiveItemsNewId)
         {
-            return await _context.ReceiveItemsNew.FirstOrDefaultAsync(p => p.Id == receiveItemsNewId);
+            return await _context.ReceiveItemsNew.FirstOrDefaultAsync(p => p.Id == receiveItemsNewId)?? new ReceiveItemsNew();
         }
 
         public async Task<ReceiveItemsNew> UpdateReceiveItemsNew(ReceiveItemsNew toUpdate )
