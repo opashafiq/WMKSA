@@ -10,6 +10,7 @@ namespace Application.Abstractions
     public interface IReceiveItemsNewRepository
     {
         Task<ICollection<Domain.Entities.ReceiveItemsNew>> GetAll();
+        Task<ICollection<Domain.Entities.ReceiveItemsNew>> GetAllByJobOrderId(long jobOrderId);
         Task<ICollection<Domain.Entities.ReceiveItemsNewFromUSPGatein>> GetGateInDataAsync(
             int? customerId,
             int? subCustomerId,

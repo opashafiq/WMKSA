@@ -52,6 +52,13 @@ namespace Infrastructure.Repositories
         public async Task<ICollection<ReceiveItemsNew>> GetAll()
         {
             return await _context.ReceiveItemsNew.ToListAsync();
+        }        
+        
+        public async Task<ICollection<ReceiveItemsNew>> GetAllByJobOrderId(long jobOrderId)
+        {
+            return await _context.ReceiveItemsNew
+                .Where(j=>j.JobOrderId==jobOrderId)
+                .ToListAsync();
         }
 
         public async Task<ReceiveItemsNew> GetReceiveItemsNewById(int receiveItemsNewId)

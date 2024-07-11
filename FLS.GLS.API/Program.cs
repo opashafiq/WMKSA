@@ -63,6 +63,20 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddDefaultTokenProviders();
 /////////////
 ///
+/// 
+/// 
+///
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder
+            .WithOrigins("http://localhost:7034") // The URL of your frontend application
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials()); // Allow credentials
+});
+
 
 //// JWT Token Generation Symmetric Key and Services
 //var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this-is-signing-key this-is-signing-key this-is-signing-key")); // This should be the key given during token creation

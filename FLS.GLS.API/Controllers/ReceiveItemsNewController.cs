@@ -34,6 +34,13 @@ namespace FLS.GLS.API.Controllers
         {
             var receiveItemsNews = await _sender.Send(new GetAllReceiveItemsNew());
             return Ok(receiveItemsNews);
+        }        
+        
+        [HttpGet("getallbyjoborderid/{joborderid}")]
+        public async Task<ActionResult> GetAllByJobOrderId(long joborderid)
+        {
+            var receiveItemsNews = await _sender.Send(new GetAllReceiveItemsNewByJobOrderId(joborderid));
+            return Ok(receiveItemsNews);
         }
 
         [HttpGet("getgatein")]
