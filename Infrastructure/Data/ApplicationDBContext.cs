@@ -36,6 +36,10 @@ namespace Infrastructure.Data
         //SP
         public DbSet<ReceiveItemsNewFromUSPGatein> ReceiveItemsNewFromUSPGatein { get; set; }
         public DbSet<ReceiveItemsNewReleaseGateOut> ReceiveItemsNewReleaseGateOut { get; set; }
+        public DbSet<USPGateIntItemDetails> USPGateIntItemDetails { get; set; }
+        public DbSet<USPGateInReport> USPGateInReport { get; set; }
+        public DbSet<USPGateOutItem> USPGateOutItem { get; set; }
+        public DbSet<USPGateOutReport> USPGateOutReport { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -45,6 +49,10 @@ namespace Infrastructure.Data
             // Add your customizations after calling base.OnModelCreating(builder);
             builder.Entity<ReceiveItemsNewFromUSPGatein>().HasNoKey();
             builder.Entity<ReceiveItemsNewReleaseGateOut>().HasNoKey();
+            builder.Entity<USPGateIntItemDetails>().HasNoKey();
+            builder.Entity<USPGateInReport>().HasNoKey();
+            builder.Entity<USPGateOutItem>().HasNoKey();
+            builder.Entity<USPGateOutReport>().HasNoKey();
  
 
         }

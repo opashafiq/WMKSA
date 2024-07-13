@@ -44,6 +44,7 @@ builder.Services.AddScoped<IReceiveItemsNewRepository, ReceiveItemsNewRepository
 builder.Services.AddScoped<IReceiveItemsNewDetailRepository, ReceiveItemsNewDetailRepository>();
 builder.Services.AddScoped<IReceiveItemsNewReleaseRepository, ReceiveItemsNewReleaseRepository>();
 builder.Services.AddScoped<IReceiveItemsNewReleaseDetailRepository, ReceiveItemsNewReleaseDetailRepository>();
+builder.Services.AddScoped<IReportRepository, ReportRepository>();
 builder.Services.AddScoped<IErrorHandlingService, ErrorHandlingService>();
 
 
