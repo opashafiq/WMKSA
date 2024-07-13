@@ -36,7 +36,7 @@ namespace Application.Operations.TruckMaster.QueryHandlers
                                  join dm in await _driverMasterRepository.GetAll()
                                  on tm.DriverMasterId equals dm.Id
                                  join trnsptm in await _transporterMasterRepository.GetAll()
-                                 on tm.TranspoterMasterId equals trnsptm.Id
+                                 on tm.TransporterMasterId equals trnsptm.Id
                                  select new TruckMasterDto
                                  {
                                      Id = tm.Id,
@@ -44,9 +44,9 @@ namespace Application.Operations.TruckMaster.QueryHandlers
                                      DriverMasterId = tm.DriverMasterId,
                                      DriverMasterDriverCode=dm.DriverCode,
                                      DriverMasterDriverName=dm.DriverName,
-                                     TranspoterMasterId = tm.TranspoterMasterId,
-                                     TranspoterMasterTransCode = trnsptm.TransCode,
-                                     TranspoterMasterTransName = trnsptm.TransName,
+                                     TransporterMasterId = tm.TransporterMasterId,
+                                     TransporterMasterTransCode = trnsptm.TransCode,
+                                     TransporterMasterTransName = trnsptm.TransName,
                                      EntryBy = tm.EntryBy,
                                      EntryDate = tm.EntryDate
                                  }).ToList();

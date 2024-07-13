@@ -17,9 +17,9 @@ namespace Application.Common.Dtos
         public string DriverMasterDriverCode { get; set; }
         public string DriverMasterDriverName { get; set; }
 
-        public int? TranspoterMasterId { get; set; }
-        public string TranspoterMasterTransCode { get; set; }
-        public string TranspoterMasterTransName { get; set; }
+        public int? TransporterMasterId { get; set; }
+        public string TransporterMasterTransCode { get; set; }
+        public string TransporterMasterTransName { get; set; }
 
         public int EntryBy { get; set; }
 

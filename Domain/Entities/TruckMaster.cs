@@ -11,7 +11,7 @@ public partial class TruckMaster
 
     public long? DriverMasterId { get; set; }
 
-    public int? TranspoterMasterId { get; set; }
+    public int? TransporterMasterId { get; set; }
 
     public int EntryBy { get; set; }
 

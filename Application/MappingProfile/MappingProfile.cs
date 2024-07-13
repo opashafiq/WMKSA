@@ -85,8 +85,8 @@ namespace Application.MappingProfile
             //CreateMap<Domain.Entities.TruckMaster, TruckMasterDto>();
 
             CreateMap<Domain.Entities.TruckMaster, TruckMasterDto>()
-                .ForMember(dest => dest.TranspoterMasterTransCode, opt => opt.MapFrom(src => src.TranspoterMaster.TransCode))
-                .ForMember(dest => dest.TranspoterMasterTransName, opt => opt.MapFrom(src => src.TranspoterMaster.TransName));
+                .ForMember(dest => dest.TransporterMasterTransCode, opt => opt.MapFrom(src => src.TranspoterMaster.TransCode))
+                .ForMember(dest => dest.TransporterMasterTransName, opt => opt.MapFrom(src => src.TranspoterMaster.TransName));
                 
         }
     }
