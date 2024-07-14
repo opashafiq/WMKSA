@@ -10,6 +10,7 @@ using FLS.GLS.API.Classes;
 using System.Xml;
 using Domain.Entities;
 using Application.Operations.ReceiveItemsNewRelease.Queries;
+using Application.Abstractions;
 
 namespace FLS.GLS.API.Controllers
 {
@@ -19,8 +20,13 @@ namespace FLS.GLS.API.Controllers
     public class ReceiveItemsNewController : ControllerBase
     {
         private readonly ISender _sender;
+        private readonly IErrorHandlingService _errorHandlingService;
 
-        public ReceiveItemsNewController(ISender sender) => _sender = sender;
+        public ReceiveItemsNewController(ISender sender, IErrorHandlingService errorHandlingService)
+        {
+            _sender = sender;
+            _errorHandlingService = errorHandlingService;
+        }
 
         [HttpGet("{id}")]
         public async Task<ActionResult> GetById(int id)
@@ -78,7 +84,7 @@ namespace FLS.GLS.API.Controllers
                 return Created(createdResourceUri, response);
             } catch (Exception ex)
             {
-                return StatusCode(500, ex.Message);
+                return  StatusCode(500, _errorHandlingService.HandleError(ex));
             }
 
         }
@@ -98,7 +104,7 @@ namespace FLS.GLS.API.Controllers
 
                 return Ok(response);
             } catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, _errorHandlingService.HandleError(ex));
             }
         }
 
@@ -117,7 +123,7 @@ namespace FLS.GLS.API.Controllers
                 return Ok(response);
             } catch(Exception ex)
             {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, _errorHandlingService.HandleError(ex));
             }
         }
     }

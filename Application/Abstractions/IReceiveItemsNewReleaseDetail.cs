@@ -12,6 +12,7 @@ namespace Application.Abstractions
         Task<ICollection<Domain.Entities.ReceiveItemsNewReleaseDetail>> GetAll();
 
         Task<Domain.Entities.ReceiveItemsNewReleaseDetail> GetReceiveItemsNewReleaseDetailById(int receiveItemsNewReleaseDetailId);
+        Task<Domain.Entities.ReceiveItemsNewReleaseDetail> GetReceiveItemsNewReleaseDetailByIdAsNoTracking(int receiveItemsNewReleaseDetailId);
 
         Task<Domain.Entities.ReceiveItemsNewReleaseDetail> AddReceiveItemsNewReleaseDetail(Domain.Entities.ReceiveItemsNewReleaseDetail toCreate);
 

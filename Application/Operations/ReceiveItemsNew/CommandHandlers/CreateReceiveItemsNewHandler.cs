@@ -29,6 +29,10 @@ namespace Application.Operations.ReceiveItemsNew.CommandHandlers
         {
 
             var receiveItemsNew = _mapper.Map<Domain.Entities.ReceiveItemsNew>(request);
+            if (receiveItemsNew.RelasedQty==null)
+            {
+                receiveItemsNew.RelasedQty = 0;
+            }
 
             return await _receiveItemsNewRepository.AddReceiveItemsNew(receiveItemsNew);
         }
