@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Application.Operations.ReceiveItemsNew.QueryHandlers
 {
-    public class GetAllReceiveItemsNewByJobOrderIdHandler : IRequestHandler<GetAllReceiveItemsNewByJobOrderId, ICollection<ReceiveItemsNewDto>>
+    public class GetAllReceiveItemsNewByJobOrderIdHandler : IRequestHandler<GetAllReceiveItemsNewByJobOrderId, ICollection<ReceiveItemsNewByJobOrderIdDto>>
     {
         private readonly IReceiveItemsNewRepository _receiveItemsNewRepository;
         private readonly IRecItemMasterRepository _recItemMasterRepository;
@@ -46,7 +46,7 @@ namespace Application.Operations.ReceiveItemsNew.QueryHandlers
             _truckMasterRepository = truckMasterRepository;
         }
 
-        public async Task<ICollection<ReceiveItemsNewDto>> Handle(GetAllReceiveItemsNewByJobOrderId request, CancellationToken cancellationToken)
+        public async Task<ICollection<ReceiveItemsNewByJobOrderIdDto>> Handle(GetAllReceiveItemsNewByJobOrderId request, CancellationToken cancellationToken)
         {
             var receiveItemsNewDto =
                               (from ri in await _receiveItemsNewRepository.GetAllByJobOrderId(request._jobOrderId)
@@ -69,7 +69,7 @@ namespace Application.Operations.ReceiveItemsNew.QueryHandlers
 
                                where jo.JobStatus != 3
 
-                               select new ReceiveItemsNewDto
+                               select new ReceiveItemsNewByJobOrderIdDto
                                {
                                    Id = ri.Id,
                                    Eirno = ri.Eirno,   
@@ -83,6 +83,7 @@ namespace Application.Operations.ReceiveItemsNew.QueryHandlers
                                    UnitMasterUnitCode=um.UnitCode,
                                    Qty=ri.Qty,
                                    RelasedQty=ri.RelasedQty,
+                                   BalanceQty = (int)ri.Qty - (int)ri.RelasedQty,
                                    CustomerMasterId = ri.CustomerMasterId,
                                    CustomerMasterCustCode=cm.CustCode,
                                    CustomerMasterCustName=cm.CustName,
