@@ -44,14 +44,19 @@ namespace Application.Operations.ReceiveItemsNew.CommandHandlers
                     throw new Exception("Release Quantity Can not be greater than Receive Quantity..");
                 }
                 var jobOrder = await _jobOrderRepository.GetJobOrderById((long)request.JobOrderId);
-                if(request.RelasedQty< request.Qty)
+                if(request.RelasedQty == request.Qty)
                 {
-                    jobOrder.JobStatus = 2;
+                    jobOrder.JobStatus = 1;
+                    _jobOrderRepository.UpdateJobOrder(jobOrder);
+                }
+                else if(request.RelasedQty == request.Qty)
+                {
+                    jobOrder.JobStatus = 3;
                     _jobOrderRepository.UpdateJobOrder(jobOrder);
                 }
                 else
                 {
-                    jobOrder.JobStatus = 3;
+                    jobOrder.JobStatus = 2;
                     _jobOrderRepository.UpdateJobOrder(jobOrder);
                 }
 
