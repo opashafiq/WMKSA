@@ -24,8 +24,8 @@ D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Application\obj\Debu
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Application\obj\Debug\net8.0\Application.sourcelink.json
-D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Application\obj\Debug\net8.0\Application.csproj.CopyComplete
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Application\obj\Debug\net8.0\Application.dll
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Application\obj\Debug\net8.0\refint\Application.dll
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Application\obj\Debug\net8.0\Application.pdb
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Application\obj\Debug\net8.0\ref\Application.dll
+D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date

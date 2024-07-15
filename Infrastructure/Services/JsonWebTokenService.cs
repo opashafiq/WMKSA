@@ -30,7 +30,7 @@ namespace Infrastructure.Services
             {
                 var signingkey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this-is-signing-key this-is-signing-key this-is-signing-key"));
                 var signingCredentials = new SigningCredentials(signingkey, SecurityAlgorithms.HmacSha256);
-                var jwt = new JwtSecurityToken(signingCredentials: signingCredentials, expires: DateTime.Now.AddMinutes(30));
+                var jwt = new JwtSecurityToken(signingCredentials: signingCredentials, expires: DateTime.Now.AddMinutes(240));
 
                 var user = await _userManager.FindByNameAsync(userName);
 

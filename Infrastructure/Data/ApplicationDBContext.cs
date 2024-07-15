@@ -40,6 +40,7 @@ namespace Infrastructure.Data
         public DbSet<USPGateInReport> USPGateInReport { get; set; }
         public DbSet<USPGateOutItem> USPGateOutItem { get; set; }
         public DbSet<USPGateOutReport> USPGateOutReport { get; set; }
+        public DbSet<USPGateInAccounts> USPGateInAccounts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -53,6 +54,7 @@ namespace Infrastructure.Data
             builder.Entity<USPGateInReport>().HasNoKey();
             builder.Entity<USPGateOutItem>().HasNoKey();
             builder.Entity<USPGateOutReport>().HasNoKey();
+            builder.Entity<USPGateInAccounts>().HasNoKey();
  
 
         }
