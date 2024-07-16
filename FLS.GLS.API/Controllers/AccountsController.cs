@@ -32,6 +32,15 @@ namespace FLS.GLS.API.Controllers
                 customerId, subCustomerId, dateStart, dateTo
                 ));
             return Ok(gateInAccounts);
+        }        
+        
+        [HttpGet("getgateincharges")]
+        public async Task<ActionResult> GetGateInCharges(string? receiveItemsNewIdParameter)
+        {
+            var gateInCharges = await _sender.Send(new GetAllUSPGateInCharges(
+                receiveItemsNewIdParameter
+                ));
+            return Ok(gateInCharges);
         }
 
     }

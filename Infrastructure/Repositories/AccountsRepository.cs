@@ -29,7 +29,20 @@ namespace Infrastructure.Repositories
             return await _context.USPGateInAccounts.FromSqlRaw("EXEC [dbo].[USP_GateInAccounts] @CustomerId, @SubCustomerId, @DateStart, @DateTo",
                                                   customerIdParam, subCustomerIdParam, dateStartParam, dateToParam)
                                       .ToListAsync();
+        }        
+        
+        public async Task<ICollection<USPGateInCharges>> GetUSPGateInChargesAsync(
+            string receiveItemsNewIdParameter
+            )
+        {
+            var receiveItemsNewIdParameterParam = new SqlParameter("@ReceiveItemsNewIdParameter", receiveItemsNewIdParameter ?? (object)DBNull.Value);
+
+
+            return await _context.USPGateInCharges.FromSqlRaw("EXEC [dbo].[USP_GateInCharges] @ReceiveItemsNewIdParameter",
+                                                  receiveItemsNewIdParameterParam)
+                                      .ToListAsync();
         }
+
 
 
         //public async Task<USPGateInReport> GetUSPGateInReport(long? receiveItemsNewId)

@@ -26,6 +26,9 @@ using Application.Operations.ReceiveItemsNew.Commands;
 using Application.Operations.ReceiveItemsNewDetail.Commands;
 using Application.Operations.ReceiveItemsNewRelease.Commands;
 using Application.Operations.ReceiveItemsNewReleaseDetail.Commands;
+using Application.Operations.ReceiveItemsNewReleaseInvoice.Commands;
+using Application.Operations.ReceiveItemsNewReleaseInvoiceCharge.Commands;
+using Application.Operations.ReceiveItemsNewReleaseRecepit.Commands;
 
 namespace Application.MappingProfile
 {
@@ -71,6 +74,12 @@ namespace Application.MappingProfile
             CreateMap<UpdateReceiveItemsNewRelease, Domain.Entities.ReceiveItemsNewRelease>();
             CreateMap<CreateReceiveItemsNewReleaseDetail, Domain.Entities.ReceiveItemsNewReleaseDetail>();
             CreateMap<UpdateReceiveItemsNewReleaseDetail, Domain.Entities.ReceiveItemsNewReleaseDetail>();
+            CreateMap<CreateReceiveItemsNewReleaseInvoice, Domain.Entities.ReceiveItemsNewReleaseInvoice>();
+            CreateMap<UpdateReceiveItemsNewReleaseInvoice, Domain.Entities.ReceiveItemsNewReleaseInvoice>();
+            CreateMap<CreateReceiveItemsNewReleaseInvoiceCharge, Domain.Entities.ReceiveItemsNewReleaseInvoiceCharge>();
+            CreateMap<UpdateReceiveItemsNewReleaseInvoiceCharge, Domain.Entities.ReceiveItemsNewReleaseInvoiceCharge>();
+            CreateMap<CreateReceiveItemsNewReleaseRecepit, Domain.Entities.ReceiveItemsNewReleaseRecepit>();
+            CreateMap<UpdateReceiveItemsNewReleaseRecepit, Domain.Entities.ReceiveItemsNewReleaseRecepit>();
 
 
             // Map Dtos

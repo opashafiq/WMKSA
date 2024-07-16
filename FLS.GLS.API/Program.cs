@@ -48,6 +48,9 @@ builder.Services.AddScoped<IReportRepository, ReportRepository>();
 builder.Services.AddScoped<IErrorHandlingService, ErrorHandlingService>();
 builder.Services.AddScoped<IItemManagementService, ItemManagementService>();
 builder.Services.AddScoped<IAccountsRepository, AccountsRepository>();
+builder.Services.AddScoped<IReceiveItemsNewReleaseInvoiceRepository, ReceiveItemsNewReleaseInvoiceRepository>();
+builder.Services.AddScoped<IReceiveItemsNewReleaseInvoiceChargeRepository, ReceiveItemsNewReleaseInvoiceChargeRepository>();
+builder.Services.AddScoped<IReceiveItemsNewReleaseRecepitRepository, ReceiveItemsNewReleaseRecepitRepository>();
 
 
 object value = builder.Services.AddApplication().AddInfrastructure();

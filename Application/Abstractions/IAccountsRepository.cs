@@ -13,6 +13,10 @@ namespace Application.Abstractions
             int? subCustomerId,
             DateTime? dateStart,
             DateTime? dateTo
+        );
+
+        Task<ICollection<Domain.Entities.USPGateInCharges>> GetUSPGateInChargesAsync(
+            string receiveItemsNewIdParameter
         );        
         
 

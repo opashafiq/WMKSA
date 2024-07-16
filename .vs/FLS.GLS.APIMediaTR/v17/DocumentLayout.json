@@ -3,46 +3,42 @@
   "WorkspaceRootPath": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A483264-C998-423E-9979-1763A02467B0}|Infrastructure\\Infrastructure.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\infrastructure\\services\\jsonwebtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A483264-C998-423E-9979-1763A02467B0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\jsonwebtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\fls.gls.api\\controllers\\receiveitemsnewreleaseinvoicechargecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|solutionrelative:fls.gls.api\\controllers\\receiveitemsnewreleaseinvoicechargecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\fls.gls.api\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|solutionrelative:fls.gls.api\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A483264-C998-423E-9979-1763A02467B0}|Infrastructure\\Infrastructure.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\infrastructure\\repositories\\receiveitemsnewreleaseinvoicechargerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A483264-C998-423E-9979-1763A02467B0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\receiveitemsnewreleaseinvoicechargerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59D4CB1F-3724-4E93-9A4F-1CA478E768F2}|Application\\Application.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\application\\operations\\accounting\\queries\\getalluspgateinaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D4CB1F-3724-4E93-9A4F-1CA478E768F2}|Application\\Application.csproj|solutionrelative:application\\operations\\accounting\\queries\\getalluspgateinaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A483264-C998-423E-9979-1763A02467B0}|Infrastructure\\Infrastructure.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\infrastructure\\repositories\\branchmasterrepository - copy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A483264-C998-423E-9979-1763A02467B0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\branchmasterrepository - copy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\fls.gls.api\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|solutionrelative:fls.gls.api\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59D4CB1F-3724-4E93-9A4F-1CA478E768F2}|Application\\Application.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\application\\common\\dtos\\receiveitemsnewreleaseinvoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D4CB1F-3724-4E93-9A4F-1CA478E768F2}|Application\\Application.csproj|solutionrelative:application\\common\\dtos\\receiveitemsnewreleaseinvoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59D4CB1F-3724-4E93-9A4F-1CA478E768F2}|Application\\Application.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\application\\operations\\accounting\\queryhandlers\\getalluspgateoutitemhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D4CB1F-3724-4E93-9A4F-1CA478E768F2}|Application\\Application.csproj|solutionrelative:application\\operations\\accounting\\queryhandlers\\getalluspgateoutitemhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\fls.gls.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|solutionrelative:fls.gls.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A483264-C998-423E-9979-1763A02467B0}|Infrastructure\\Infrastructure.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\infrastructure\\repositories\\accountsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A483264-C998-423E-9979-1763A02467B0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\accountsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\fls.gls.api\\controllers\\receiveitemsnewreleaseinvoicecontroller - copy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|solutionrelative:fls.gls.api\\controllers\\receiveitemsnewreleaseinvoicecontroller - copy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A483264-C998-423E-9979-1763A02467B0}|Infrastructure\\Infrastructure.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A483264-C998-423E-9979-1763A02467B0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\fls.gls.api\\controllers\\receiveitemsnewreleaseinvoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|solutionrelative:fls.gls.api\\controllers\\receiveitemsnewreleaseinvoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59D4CB1F-3724-4E93-9A4F-1CA478E768F2}|Application\\Application.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\application\\abstractions\\iaccountsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D4CB1F-3724-4E93-9A4F-1CA478E768F2}|Application\\Application.csproj|solutionrelative:application\\abstractions\\iaccountsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59D4CB1F-3724-4E93-9A4F-1CA478E768F2}|Application\\Application.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\application\\common\\dtos\\uspgateinaccountsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D4CB1F-3724-4E93-9A4F-1CA478E768F2}|Application\\Application.csproj|solutionrelative:application\\common\\dtos\\uspgateinaccountsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|d:\\shafiq-d\\my_projects\\with nag\\yms_api\\fls.gls.apimediatr\\fls.gls.api\\controllers\\truckmastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F3ECC1-7AEA-4DAD-87A2-36ED79ED3D3B}|FLS.GLS.API\\FLS.GLS.API.csproj|solutionrelative:fls.gls.api\\controllers\\truckmastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 187,
+      "VerticalTabListWidth": 174,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -55,118 +51,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "JsonWebTokenService.cs",
-              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Infrastructure\\Services\\JsonWebTokenService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Services\\JsonWebTokenService.cs",
-              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Infrastructure\\Services\\JsonWebTokenService.cs",
-              "RelativeToolTip": "Infrastructure\\Services\\JsonWebTokenService.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAAB7AAAA",
+              "Title": "ReceiveItemsNewReleaseInvoiceChargeController.cs",
+              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceChargeController.cs",
+              "RelativeDocumentMoniker": "FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceChargeController.cs",
+              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceChargeController.cs",
+              "RelativeToolTip": "FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceChargeController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwD4AAACIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T08:11:54.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReportController.cs",
-              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\ReportController.cs",
-              "RelativeDocumentMoniker": "FLS.GLS.API\\Controllers\\ReportController.cs",
-              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\ReportController.cs",
-              "RelativeToolTip": "FLS.GLS.API\\Controllers\\ReportController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T08:06:42.525Z",
+              "WhenOpened": "2024-07-16T16:35:44.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AccountsController.cs",
-              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\AccountsController.cs",
-              "RelativeDocumentMoniker": "FLS.GLS.API\\Controllers\\AccountsController.cs",
-              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\AccountsController.cs",
-              "RelativeToolTip": "FLS.GLS.API\\Controllers\\AccountsController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAACEAAAAkAAAA",
+              "Title": "ReceiveItemsNewReleaseInvoiceChargeRepository.cs",
+              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Infrastructure\\Repositories\\ReceiveItemsNewReleaseInvoiceChargeRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ReceiveItemsNewReleaseInvoiceChargeRepository.cs",
+              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Infrastructure\\Repositories\\ReceiveItemsNewReleaseInvoiceChargeRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\ReceiveItemsNewReleaseInvoiceChargeRepository.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAA2wA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T08:05:24.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Infrastructure\\Data\\ApplicationDBContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\ApplicationDBContext.cs",
-              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Infrastructure\\Data\\ApplicationDBContext.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\ApplicationDBContext.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAQwDgAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T08:00:20.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AccountsRepository.cs",
-              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Infrastructure\\Repositories\\AccountsRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\AccountsRepository.cs",
-              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Infrastructure\\Repositories\\AccountsRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\AccountsRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T07:55:12.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IAccountsRepository.cs",
-              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Application\\Abstractions\\IAccountsRepository.cs",
-              "RelativeDocumentMoniker": "Application\\Abstractions\\IAccountsRepository.cs",
-              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Application\\Abstractions\\IAccountsRepository.cs",
-              "RelativeToolTip": "Application\\Abstractions\\IAccountsRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T07:54:03.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetAllUSPGateOutItemHandler.cs",
-              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Application\\Operations\\Accounting\\QueryHandlers\\GetAllUSPGateOutItemHandler.cs",
-              "RelativeDocumentMoniker": "Application\\Operations\\Accounting\\QueryHandlers\\GetAllUSPGateOutItemHandler.cs",
-              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Application\\Operations\\Accounting\\QueryHandlers\\GetAllUSPGateOutItemHandler.cs",
-              "RelativeToolTip": "Application\\Operations\\Accounting\\QueryHandlers\\GetAllUSPGateOutItemHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T07:50:36.938Z",
+              "WhenOpened": "2024-07-16T16:26:39.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GetAllUSPGateInAccounts.cs",
-              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Application\\Operations\\Accounting\\Queries\\GetAllUSPGateInAccounts.cs",
-              "RelativeDocumentMoniker": "Application\\Operations\\Accounting\\Queries\\GetAllUSPGateInAccounts.cs",
-              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Application\\Operations\\Accounting\\Queries\\GetAllUSPGateInAccounts.cs",
-              "RelativeToolTip": "Application\\Operations\\Accounting\\Queries\\GetAllUSPGateInAccounts.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Title": "BranchMasterRepository - Copy.cs",
+              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Infrastructure\\Repositories\\BranchMasterRepository - Copy.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\BranchMasterRepository - Copy.cs",
+              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Infrastructure\\Repositories\\BranchMasterRepository - Copy.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\BranchMasterRepository - Copy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T07:40:18.453Z",
+              "WhenOpened": "2024-07-16T16:26:26.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "USPGateInAccountsDto.cs",
-              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Application\\Common\\Dtos\\USPGateInAccountsDto.cs",
-              "RelativeDocumentMoniker": "Application\\Common\\Dtos\\USPGateInAccountsDto.cs",
-              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Application\\Common\\Dtos\\USPGateInAccountsDto.cs",
-              "RelativeToolTip": "Application\\Common\\Dtos\\USPGateInAccountsDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "DocumentIndex": 3,
+              "Title": "ReceiveItemsNewReleaseInvoiceDto.cs",
+              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Application\\Common\\Dtos\\ReceiveItemsNewReleaseInvoiceDto.cs",
+              "RelativeDocumentMoniker": "Application\\Common\\Dtos\\ReceiveItemsNewReleaseInvoiceDto.cs",
+              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\Application\\Common\\Dtos\\ReceiveItemsNewReleaseInvoiceDto.cs",
+              "RelativeToolTip": "Application\\Common\\Dtos\\ReceiveItemsNewReleaseInvoiceDto.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAswDEAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T07:09:32.559Z",
+              "WhenOpened": "2024-07-16T16:26:08.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Program.cs",
+              "RelativeDocumentMoniker": "FLS.GLS.API\\Program.cs",
+              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Program.cs",
+              "RelativeToolTip": "FLS.GLS.API\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:22:24.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReceiveItemsNewReleaseInvoiceController - Copy.cs",
+              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceController - Copy.cs",
+              "RelativeDocumentMoniker": "FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceController - Copy.cs",
+              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceController - Copy.cs",
+              "RelativeToolTip": "FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceController - Copy.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAqwCUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:21:33.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReceiveItemsNewReleaseInvoiceController.cs",
+              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceController.cs",
+              "RelativeDocumentMoniker": "FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceController.cs",
+              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceController.cs",
+              "RelativeToolTip": "FLS.GLS.API\\Controllers\\ReceiveItemsNewReleaseInvoiceController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:17:26.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TruckMasterController.cs",
+              "DocumentMoniker": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\TruckMasterController.cs",
+              "RelativeDocumentMoniker": "FLS.GLS.API\\Controllers\\TruckMasterController.cs",
+              "ToolTip": "D:\\SHAFIQ-D\\my_projects\\With Nag\\YMS_API\\FLS.GLS.APIMediaTR\\FLS.GLS.API\\Controllers\\TruckMasterController.cs",
+              "RelativeToolTip": "FLS.GLS.API\\Controllers\\TruckMasterController.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:16:50.958Z",
               "EditorCaption": ""
             }
           ]

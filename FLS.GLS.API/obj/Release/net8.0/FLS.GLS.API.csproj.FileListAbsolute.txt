@@ -152,9 +152,9 @@ D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Rele
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.FLS.GLS.API.props
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Release\net8.0\staticwebassets.pack.json
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Release\net8.0\scopedcss\bundle\FLS.GLS.API.styles.css
-D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Release\net8.0\FLS.GLS.API.csproj.CopyComplete
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Release\net8.0\FLS.GLS.API.dll
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Release\net8.0\refint\FLS.GLS.API.dll
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Release\net8.0\FLS.GLS.API.pdb
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Release\net8.0\FLS.GLS.API.genruntimeconfig.cache
 D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Release\net8.0\ref\FLS.GLS.API.dll
+D:\SHAFIQ-D\my_projects\With Nag\YMS_API\FLS.GLS.APIMediaTR\FLS.GLS.API\obj\Release\net8.0\FLS.GLS..817E380D.Up2Date

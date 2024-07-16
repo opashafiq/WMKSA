@@ -32,6 +32,9 @@ namespace Infrastructure.Data
         public DbSet<ReceiveItemsNewDetail> ReceiveItemsNewDetails { get; set; }
         public DbSet<ReceiveItemsNewRelease> ReceiveItemsNewRelease { get; set; }
         public DbSet<ReceiveItemsNewReleaseDetail> ReceiveItemsNewReleaseDetails { get; set; }
+        public DbSet<ReceiveItemsNewReleaseInvoice> ReceiveItemsNewReleaseInvoice { get; set; }
+        public DbSet<ReceiveItemsNewReleaseInvoiceCharge> ReceiveItemsNewReleaseInvoiceCharge { get; set; }
+        public DbSet<ReceiveItemsNewReleaseRecepit> ReceiveItemsNewReleaseRecepit { get; set; }
 
         //SP
         public DbSet<ReceiveItemsNewFromUSPGatein> ReceiveItemsNewFromUSPGatein { get; set; }
@@ -41,6 +44,7 @@ namespace Infrastructure.Data
         public DbSet<USPGateOutItem> USPGateOutItem { get; set; }
         public DbSet<USPGateOutReport> USPGateOutReport { get; set; }
         public DbSet<USPGateInAccounts> USPGateInAccounts { get; set; }
+        public DbSet<USPGateInCharges> USPGateInCharges { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -55,6 +59,7 @@ namespace Infrastructure.Data
             builder.Entity<USPGateOutItem>().HasNoKey();
             builder.Entity<USPGateOutReport>().HasNoKey();
             builder.Entity<USPGateInAccounts>().HasNoKey();
+            builder.Entity<USPGateInCharges>().HasNoKey();
  
 
         }

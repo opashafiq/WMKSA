@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Domain.Entities;
-
+namespace Application.Common.Dtos;
 public partial class ReceiveItemsNewReleaseDetailDto
 {
     public long Id { get; set; }
